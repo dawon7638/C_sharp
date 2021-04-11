@@ -1,0 +1,14 @@
+@using view_models_fun.Models;
+@* @model NumbersModel; *@
+
+
+<div class="text-center">
+    <h2>Here are some numbers!</h2>
+    <ul>
+        @model int [];
+        @foreach (int number in Model)
+        {
+            <p>@number</p>
+        }
+    </ul>
+</div>

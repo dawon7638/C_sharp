@@ -1,0 +1,13 @@
+*{
+    margin: auto;
+}
+.header {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.time-display{
+    border: 3px solid black;
+    margin-top: 2rem;
+    width: 300px;
+}

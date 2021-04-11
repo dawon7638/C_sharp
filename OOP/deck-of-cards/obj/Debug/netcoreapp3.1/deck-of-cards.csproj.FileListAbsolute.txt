@@ -1,0 +1,11 @@
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\OOP\deck-of-cards\bin\Debug\netcoreapp3.1\deck-of-cards.exe
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\OOP\deck-of-cards\bin\Debug\netcoreapp3.1\deck-of-cards.deps.json
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\OOP\deck-of-cards\bin\Debug\netcoreapp3.1\deck-of-cards.runtimeconfig.json
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\OOP\deck-of-cards\bin\Debug\netcoreapp3.1\deck-of-cards.runtimeconfig.dev.json
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\OOP\deck-of-cards\bin\Debug\netcoreapp3.1\deck-of-cards.dll
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\OOP\deck-of-cards\bin\Debug\netcoreapp3.1\deck-of-cards.pdb
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\OOP\deck-of-cards\obj\Debug\netcoreapp3.1\deck-of-cards.csprojAssemblyReference.cache
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\OOP\deck-of-cards\obj\Debug\netcoreapp3.1\deck-of-cards.AssemblyInfoInputs.cache
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\OOP\deck-of-cards\obj\Debug\netcoreapp3.1\deck-of-cards.AssemblyInfo.cs
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\OOP\deck-of-cards\obj\Debug\netcoreapp3.1\deck-of-cards.dll
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\OOP\deck-of-cards\obj\Debug\netcoreapp3.1\deck-of-cards.pdb

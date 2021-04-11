@@ -1,0 +1,13 @@
+@using view_models_fun.Models;
+@* @model HomeModel; *@
+
+<div class="text-center">
+    <h2>Here are some Users!</h2>
+
+    @model List<string>;
+    @foreach (var name in Model)
+    {
+    <p>@name</p>
+        
+    }
+</div>

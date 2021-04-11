@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/Styles.css">
+</head>
+
+<body>
+    <div class="links">
+        <a href="/">Home</a> | </a><a href="/projects">Projects</a> | <a href="/contact">Contact</a>
+    </div>
+
+    <div class="header">
+        <h1>Here are some projects of mine!</h1>
+    </div>
+    <div class="project-main">
+        @{
+            var StringList = new List<string>
+
+        {
+        "Cool thing 1!",
+        "Cool thing 2!",
+        "Cool thing 3!",
+        "Cool thing 4!",
+        "Cool thing 5!",
+        "Cool thing 6!"
+        };
+            foreach (string project in StringList)
+            {
+                <ul>
+                    <div class="project-stuff">
+                        <div class="project-pic">
+                            placeholder
+                        </div>
+                        <div>
+                            <p class="project-items">@project</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores possimus voluptas, dolorum
+                                laboriosam debitis velit iusto quibusdam unde aut, corrupti voluptate similique modi enim id
+                                explicabo fuga quaerat cupiditate voluptatibus!</p>
+                        </div>
+                    </div>
+                </ul>
+            }
+
+        }
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\collection-practice\bin\Debug\netcoreapp3.1\collection-practice.exe
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\collection-practice\bin\Debug\netcoreapp3.1\collection-practice.deps.json
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\collection-practice\bin\Debug\netcoreapp3.1\collection-practice.runtimeconfig.json
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\collection-practice\bin\Debug\netcoreapp3.1\collection-practice.runtimeconfig.dev.json
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\collection-practice\bin\Debug\netcoreapp3.1\collection-practice.dll
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\collection-practice\bin\Debug\netcoreapp3.1\collection-practice.pdb
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\collection-practice\obj\Debug\netcoreapp3.1\collection-practice.csprojAssemblyReference.cache
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\collection-practice\obj\Debug\netcoreapp3.1\collection-practice.AssemblyInfoInputs.cache
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\collection-practice\obj\Debug\netcoreapp3.1\collection-practice.AssemblyInfo.cs
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\collection-practice\obj\Debug\netcoreapp3.1\collection-practice.dll
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\collection-practice\obj\Debug\netcoreapp3.1\collection-practice.pdb

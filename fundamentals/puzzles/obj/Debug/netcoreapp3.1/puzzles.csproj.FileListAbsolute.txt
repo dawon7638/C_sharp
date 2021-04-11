@@ -1,0 +1,11 @@
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\puzzles\bin\Debug\netcoreapp3.1\puzzles.exe
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\puzzles\bin\Debug\netcoreapp3.1\puzzles.deps.json
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\puzzles\bin\Debug\netcoreapp3.1\puzzles.runtimeconfig.json
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\puzzles\bin\Debug\netcoreapp3.1\puzzles.runtimeconfig.dev.json
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\puzzles\bin\Debug\netcoreapp3.1\puzzles.dll
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\puzzles\bin\Debug\netcoreapp3.1\puzzles.pdb
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\puzzles\obj\Debug\netcoreapp3.1\puzzles.csprojAssemblyReference.cache
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\puzzles\obj\Debug\netcoreapp3.1\puzzles.AssemblyInfoInputs.cache
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\puzzles\obj\Debug\netcoreapp3.1\puzzles.AssemblyInfo.cs
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\puzzles\obj\Debug\netcoreapp3.1\puzzles.dll
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\fundamentals\puzzles\obj\Debug\netcoreapp3.1\puzzles.pdb
