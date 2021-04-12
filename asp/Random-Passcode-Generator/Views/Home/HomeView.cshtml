@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@* In View to add a session count *@
+@* <h2>You have clicked the button @ViewBag.Count</h2> *@
+<h4><b>Random passcode (passcode #@ViewBag.Count)</b></h4>
+<div class="passbox">
+    <h2><b>@ViewBag.password</b></h2>
+</div>
+
+@* using submit button to just refresh page to do count. 
+no action needed in this case *@
+<form action="">
+    <input id="generate" type="Submit">
+</form>
+
