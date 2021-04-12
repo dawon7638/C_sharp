@@ -1,0 +1,48 @@
+﻿@model UserModel;
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css" />
+    <title>Dojo Survey</title>
+</head>
+
+<body>
+    <form asp-action=Create asp-controller="Home" method="POST">
+        <span asp-validation-for="Name"></span>
+        <label asp-for="Name"></label>
+        <input asp-for="Name">
+        <br>
+        <span asp-validation-for="Location"></span>
+        <label asp-for="Location"></label>
+        <select asp-for="Location">
+            <option></option>
+            <option value="San Jose">San Jose</option>
+            <option value="Chicago">Chicago</option>
+            <option value="Seattle">Seattle</option>
+            <option value="Boise">Boise</option>
+        </select>
+        <br>
+        <span asp-validation-for="Language"></span>
+        <label asp-for="Language"></label>
+        <select name="Language" id="">
+            <option></option>
+            <option value="C#">C#</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="React">React</option>
+        </select>
+        <br>
+        <span asp-validation-for="Comment"></span>
+        <label asp-for="Comment"></label>
+        <textarea asp-for="Comment" cols="30" rows="5"></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
