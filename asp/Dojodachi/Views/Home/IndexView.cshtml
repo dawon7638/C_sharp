@@ -1,0 +1,58 @@
+﻿<div class="text-center">
+    <h1 class="display-4">Welcome this is Rooster your loyal Pet!</h1>
+
+    <div class="card mb-3" style="max-width: 740px; margin-left: 200px">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="https://thumbs.gfycat.com/NewGrandCockroach-max-1mb.gif" class="card-img-top" alt="lab image">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Fullness: @ViewBag.Fullness</li>
+                        <li class="list-group-item">Happiness: @ViewBag.Happiness</li>
+                        <li class="list-group-item">Meals: @ViewBag.Meals</li>
+                        <li class="list-group-item">Energy: @ViewBag.Energy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>@ViewBag.Alert</h2>
+    </div>
+    <div>
+
+        @{
+            if (ViewBag.Energy > 1 || ViewBag.Happiness > 1)
+            {
+                <form action="feed" class="btn btn-primary" method="POST">
+                    <button type=submit class="btn btn-primary">Feed</button>
+                </form>
+                <form action="play" class="btn btn-success" method="POST">
+                    <button class="btn btn-success" type=submit>Play</button>
+                </form>
+                <form action="work" class="btn btn-secondary" method="POST">
+                    <button class="btn btn-secondary" type=submit>Work</button>
+                </form>
+                <form action="sleep" class="btn btn-dark" method="POST">
+                    <button class="btn btn-dark" type=submit>Sleep</button>
+                </form>
+            }
+
+            if ((int)ViewBag.Energy == 0 || (int)ViewBag.Happiness == 0)
+            {
+                <p> Oh no!! </p>
+                <form action="" class="btn btn-danger" method="POST">
+                    <button class="btn btn-danger" type=submit>Get another Rooster?</button>
+                </form>
+            }
+            if (ViewBag.Happiness >= 100 && ViewBag.Energy >= 100 && ViewBag.Fullness >= 100)
+            {
+                <p>Rooster survived to see another day!</p>
+                <form action="" class="btn btn-success" method="POST">
+                    <button class="btn btn-success" type=submit>Replay?</button>
+                </form>
+            }
+        }
+    </div>
