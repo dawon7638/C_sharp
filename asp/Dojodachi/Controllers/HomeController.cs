@@ -21,11 +21,14 @@ namespace Dojodachi.Controllers
 
 
         /*
+            Should try to do as few razor code as possible
+
+
             [x] Your Dojodachi should start with 20 happiness, 20 fullness, 50 energy, and 3 meals.
             [x] After every button press, display a message showing how the Dojodachi reacted
             [x] Feeding your Dojodachi costs 1 meal and gains a random amount of fullness between 5 and 10 (you cannot feed your Dojodachi if you do not have meals)
             [x] Playing with your Dojodachi costs 5 energy and gains a random amount of happiness between 5 and 10
-            [x] Every time you play with or feed your dojodachi there should be a 25% chance that it won't like it. Energy or meals will still decrease, but happiness and fullness won't change.
+            [x] Every time you play with or feed your Dojodachi there should be a 25% chance that it won't like it. Energy or meals will still decrease, but happiness and fullness won't change.
             [x] Working costs 5 energy and earns between 1 and 3 meals
             [x] Sleeping earns 15 energy and decreases fullness and happiness each by 5
             [x] If energy, fullness, and happiness are all raised to over 100, you win! a restart button should be displayed.
@@ -83,11 +86,11 @@ namespace Dojodachi.Controllers
             }
             else
             {
-                ViewBag.Fullness = HttpContext.Session.GetInt32("Fullness");
                 string alert = new string("The cupboards are bare please get more food!");
                 ViewBag.Alert = alert;
             }
 
+            ViewBag.Fullness = HttpContext.Session.GetInt32("Fullness");
             ViewBag.Happiness = HttpContext.Session.GetInt32("Happiness");
             ViewBag.Energy = HttpContext.Session.GetInt32("Energy");
             return View("IndexView");
@@ -96,7 +99,7 @@ namespace Dojodachi.Controllers
         public IActionResult Play()
         /*
         [x] Playing with your Dojodachi costs 5 energy and gains a random amount of happiness between 5 and 10
-        [x] Every time you play with or feed your dojodachi there should be a 25% chance that it won't like it. Energy or meals will still decrease, but happiness and fullness won't change.
+        [x] Every time you play with or feed your Dojodachi there should be a 25% chance that it won't like it. Energy or meals will still decrease, but happiness and fullness won't change.
         */
         {
             Console.WriteLine("Play Button");
@@ -213,7 +216,16 @@ namespace Dojodachi.Controllers
 
 
 
-
+                
+                [HttpPost("/reset")]
+        
+                public IActionResult Reset()
+                {
+                    HttpContext.Session.Clear();
+                    return RedirectToAction("IndexView");
+                }
+        
+        
 
 
 

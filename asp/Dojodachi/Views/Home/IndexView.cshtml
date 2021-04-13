@@ -40,17 +40,17 @@
                 </form>
             }
 
-            if ((int)ViewBag.Energy == 0 || (int)ViewBag.Happiness == 0)
+            if (ViewBag.Energy == 0 ||ViewBag.Happiness == 0)
             {
                 <p> Oh no!! </p>
-                <form action="" class="btn btn-danger" method="POST">
+                <form action="/reset" class="btn btn-danger" method="POST">
                     <button class="btn btn-danger" type=submit>Get another Rooster?</button>
                 </form>
             }
             if (ViewBag.Happiness >= 100 && ViewBag.Energy >= 100 && ViewBag.Fullness >= 100)
             {
                 <p>Rooster survived to see another day!</p>
-                <form action="" class="btn btn-success" method="POST">
+                <form action="/reset" class="btn btn-success" method="POST">
                     <button class="btn btn-success" type=submit>Replay?</button>
                 </form>
             }
