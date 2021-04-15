@@ -1,0 +1,57 @@
+@model DishModel
+<h3 class="text-center">Edit @Model.Name</h3>
+
+
+<form asp-controller="Dishes" asp-action="Update" method="POST">
+
+    <div class='row'>
+        <div class='col-sm-4'>
+            <div class='form-group'>
+                <span asp-validation-for="Chef"></span>
+                <label asp-for="Chef"></label>
+                <input asp-for="Chef" class="form-control" size="30" type="text" />
+            </div>
+
+        </div>
+        <div class='col-sm-4'>
+            <div class='form-group'>
+                <span asp-validation-for="Tastiness"></span>
+                <label asp-for="Tastiness"></label>
+                <select asp-for="Tastiness" class="form-control" type="text">
+                    <option>1 </option>
+                    <option>2 </option>
+                    <option>3 </option>
+                    <option>4 </option>
+                    <option>5</option>
+                </select>
+            </div>
+
+        </div>
+        <div class='col-sm-4'>
+            <div class='form-group'>
+                <span asp-validation-for="Description"></span>
+                <label asp-for="Description"></label>
+                <textarea asp-for="Description" class="form-control" cols="15" rows="5"></textarea>
+            </div>
+            <input type="submit" value="Edit Dish" class="btn btn-outline-success">
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col-sm-4'>
+            <div class='form-group'>
+                <span asp-validation-for="Name"></span>
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" size="30" type="text" />
+            </div>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col-sm-4'>
+            <div class='form-group'>
+                <span asp-validation-for="Calories"></span>
+                <label asp-for="Calories"></label>
+                <input asp-for="Calories" class="form-control" size="30" type="text" />
+            </div>
+        </div>
+    </div>
+</form>
