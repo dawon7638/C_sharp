@@ -2,14 +2,14 @@
 
 
 <div class="container">
-    <a href="/dishes/new">Add a Dish</a>
+    <a href="/new">Add a Dish</a>
     <h3 class="text-center">
         Welcome to CRUDelicious
     </h3>
-    <h4>Check out some recent dishes!</h4>
+    <h5>Check out some recent dishes!</h5>
     <hr>
 </div>
 @foreach (DishModel dish in Model)
 {
-    <p><a asp-asp-controller="Dishes" asp-action="ReadView" asp-route-dishId="@dish.DishId">@dish.Name</a> by @dish.Chef</p>
+    <p><a asp-controller="Dishes" asp-action="ReadView" asp-route-dishId="@dish.DishId">@dish.Name</a> by @dish.Chef</p>
 }

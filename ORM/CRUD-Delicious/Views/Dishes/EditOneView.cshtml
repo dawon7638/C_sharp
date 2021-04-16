@@ -2,7 +2,7 @@
 <h3 class="text-center">Edit @Model.Name</h3>
 
 
-<form asp-controller="Dishes" asp-action="Update" method="POST">
+<form asp-controller="Dishes" asp-action="Update" asp-route-dishId="@Model.DishId" method="POST">
 
     <div class='row'>
         <div class='col-sm-4'>

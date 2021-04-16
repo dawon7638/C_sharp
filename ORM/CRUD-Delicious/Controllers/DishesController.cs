@@ -52,6 +52,7 @@ namespace CRUD_Delicious.Controllers
         public IActionResult Edit(int dishId)
         {
             DishModel dish = db.Dishes.FirstOrDefault(d => d.DishId == dishId);
+            Console.WriteLine("What's in " + dish);
 
             if (dish == null)
             {
@@ -59,8 +60,6 @@ namespace CRUD_Delicious.Controllers
             }
             return View("EditOneView", dish);
         }
-
-
         ///////////////////////////////////////////////////////
 
 
@@ -94,21 +93,22 @@ namespace CRUD_Delicious.Controllers
             return RedirectToAction("AllDishesView");
         }
 
-        [HttpPost("/dishes/{dishid}")]
+        [HttpPost("/dishes/{dishId}")]
 
         public IActionResult Update(DishModel editedDish, int dishId)
         {
             if (ModelState.IsValid == false)
             {
-                return View("EditOneView");
+                editedDish.DishId = dishId;
+                return View("EditOneView", editedDish);
             }
             DishModel dish = db.Dishes.FirstOrDefault(d => d.DishId == dishId);
 
-            dish.Chef = dish.Chef;
-            dish.Tastiness = dish.Tastiness;
-            dish.Description = dish.Description;
-            dish.Name = dish.Name;
-            dish.Calories = dish.Calories;
+            dish.Chef = editedDish.Chef;
+            dish.Tastiness = editedDish.Tastiness;
+            dish.Description = editedDish.Description;
+            dish.Name = editedDish.Name;
+            dish.Calories = editedDish.Calories;
 
             db.Dishes.Update(dish);
             db.SaveChanges();
