@@ -1,0 +1,45 @@
+@model LogUser
+
+<div class="header clearfix">
+    <nav>
+        <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Register</a>
+            </li>
+        </ul>
+    </nav>
+    <h1 class="text-muted text-center"> Login to this Cool Site!</h1>
+</div>
+
+<form asp-controller="LogUsers" asp-action="Login" method="POST" class="form-horizontal">
+    <fieldset>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label asp-for="LoginEmail" class="col-md-2 control-label" for=""></label>
+            <span asp-validation-for="LoginEmail" class="text-danger"></span>
+            <div class="col-md-4">
+                <input asp-for="LoginEmail" placeholder="email" class="form-control input-md">
+            </div>
+        </div>
+
+        <!-- Password input-->
+        <div class="form-group">
+            <label asp-for="LoginPassword" class="col-md-2 control-label" for=""></label>
+            <span asp-validation-for="LoginPassword" class="text-danger"></span>
+            <div class="col-md-4">
+                <input asp-for="LoginPassword" placeholder="password" class="form-control">
+
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="singlebutton"></label>
+            <div class="col-md-4">
+                <button type="submit" class="btn btn-primary">Log In</button>
+            </div>
+        </div>
+
+    </fieldset>
+</form>

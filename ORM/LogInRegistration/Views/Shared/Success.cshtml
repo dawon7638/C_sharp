@@ -1,0 +1,14 @@
+@model LogUser
+
+<div class="header clearfix">
+    <nav>
+        <form asp-action="Logout" asp-controller="LogUsers" method="POST" class=" nav nav-pills float-right mb-3">
+            <button class="btn btn-primary" type=submit>Log Out</button>
+        </form>
+    </nav>
+</div>
+
+<div class="jumbotron text-center">
+    <h1 class="display-3">You have arrived! @Model.LoginEmail</h1>
+
+</div>
