@@ -1,0 +1,30 @@
+@model List<Dish>
+
+<div class="text-center">
+    <h3><a href="/">Chefs</a> | Dishes </h3>
+    <a href="/dishes/new">Add a Dish</a>
+</div>
+
+<h3>Yum, take a look at our tasty dishes!</h3>
+<hr>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Chef</th>
+            <th scope="col">Tastiness</th>
+            <th scope="col">Calories</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Dish dish in Model)
+        {
+            <tr>
+                <td>@dish.Name</td>
+                <td>@dish.Cooker.FullName()</td>
+                <td>@dish.Tastiness</td>
+                <td>@dish.Calories</td>
+            </tr>
+        }
+    </tbody>
+</table>
