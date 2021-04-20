@@ -1,0 +1,18 @@
+@model Transaction
+<form asp-controller="Home" asp-action="Transaction" asp-route-UserId="@Model.UId" method="POST">
+    <form class="form-inline">
+        <div class="form-group row">
+            <label asp-for="Amount" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10 d-flex">
+                <input asp-for="Amount" type="number" class="form-control col-sm-2 ">
+                <input type="hidden" asp-for="UId" value='@Context.Session.GetInt32("UserId")'>
+                <button type="submit" class="btn btn-outline-success mb-2 ml-1">Submit</button>
+            </div>
+        </div>
+        </div>
+    </form>
+</form>
+<div class="">
+
+    <h5>Current balance: @string.Format("{0:0,0.00}", @ViewBag.Balance)</h5>
+</div>
