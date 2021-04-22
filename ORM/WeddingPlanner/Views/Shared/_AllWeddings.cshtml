@@ -1,0 +1,27 @@
+<Wedding>
+    @{
+        int? uid = @Context.Session.GetInt32("Userid");
+    }
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Wedding</th>
+                <th scope="col">Date</th>
+                <th scope="col">Guest</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var marriage in ViewBag.CoupleInfo)
+            {
+                <tr>
+                    <td><a asp-controller="Home" asp-action="Details" asp-route-WeddingId="@marriage.WeddingId">
+                            @marriage.CouplesName()</a></td>
+                    <td>@marriage.Date</td>
+                    <td>data</td>
+                    <td>Delete</td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>

@@ -1,0 +1,15 @@
+@model User
+@{
+    int? uid = @Context.Session.GetInt32("Userid");
+}
+<div class="text-center row justify-content-around ">
+    <h1>Welcome to the Wedding Planner</h1>
+    <a href="/">Log Out</a>
+</div>
+<div class="mt-5">
+    <partial name="_AllWeddings" />
+</div>
+
+<form asp-action="NewWedding" asp-controller="Home" method="POST">
+    <button type="submit" class="btn btn-outline-success float-right">New Wedding</button>
+</form>
