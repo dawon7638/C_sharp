@@ -1,0 +1,57 @@
+@model Event
+@{
+    int? uid = @Context.Session.GetInt32("UserId");
+}
+<div class="text-center row justify-content-around align-items-center">
+    <h3> Dojo Activity Center</h3>
+    <a href="/Home">Home</a>
+    <a href="/signin">Log Out</a>
+</div>
+<hr>
+<div class=" row justify-content-around align-items-center">
+
+
+    <h5 class="m-3">@Model.Todo </h5>
+    @{
+        bool isAlreadyAttending = Model.People
+            .Any(p => p.UserId == uid);
+    }
+
+
+    @if (Model.UserId == uid)
+    {
+
+        <form asp-controller="Events" asp-action="Delete" asp-route-EventId="@Model.EventId" method="POST">
+            <button class="btn btn-sm btn-outline-danger">Delete</button>
+        </form>
+
+    }
+    else
+    {
+        <form asp-controller="Events" asp-action="Join" asp-route-EventId="@Model.EventId" method="POST">
+            <button class="btn btn-sm btn-outline-success">
+                @if (isAlreadyAttending)
+                {
+                    <span>Leave</span>
+                }
+                else
+                {
+                    <span>Join</span>
+                }
+            </button>
+        </form>
+
+    }
+</div>
+<h5>Event Coordinator: @Model.CreatedBy.FullName()</h5>
+<div class="">
+    <h6>Description:</h6>
+    <p>@Model.Description</p>
+</div>
+<h6>Participants:</h6>
+<ul>
+    @foreach (Participant person in Model.People)
+    {
+        <li>@person.User.Name</li>
+    }
+</ul>
