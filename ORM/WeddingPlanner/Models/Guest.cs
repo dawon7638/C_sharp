@@ -9,6 +9,12 @@ namespace WeddingPlanner.Models
         public int GuestId { get; set; }
         //////////////////////////////////
 
+        /**********************************************************************
+        Relationship properties: foreign keys and navigation properties. 
+        Navigation properties are null unless .Include is used. 
+        "Object reference not set to an instance of an object"
+        will be the error if accessed but not included. 
+        **********************************************************************/
 
         /////////////FOREIGN KEYS\\\\\\\\\\\\\\\
         /////////////USER ID\\\\\\\\\\\\\\\

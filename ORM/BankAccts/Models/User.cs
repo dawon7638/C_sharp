@@ -24,7 +24,7 @@ namespace BankAccts.Models
         [MinLength(2, ErrorMessage = "must be at least 2 characters!")]
         [MaxLength(45)]
         [Display(Name = "Last Name:")]
-        public string LastName { get; set; }///FIRST NAME\\\
+        public string LastName { get; set; }///LAST NAME\\\
         //////////////////////////////////
 
         //////////USER'S EMAIL\\\\\\\\\\\\

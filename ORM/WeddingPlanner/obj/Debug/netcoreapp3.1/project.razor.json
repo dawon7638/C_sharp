@@ -14402,18 +14402,13 @@
   "RootNamespace": "WeddingPlanner",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\dawon\\OneDrive\\Desktop\\coding_dojo\\C#\\ORM\\WeddingPlanner\\Views\\Home\\New.cshtml",
-      "TargetPath": "Views\\Home\\New.cshtml",
+      "FilePath": "c:\\Users\\dawon\\OneDrive\\Desktop\\coding_dojo\\C#\\ORM\\WeddingPlanner\\Views\\Weddings\\Details.cshtml",
+      "TargetPath": "Views\\Weddings\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\dawon\\OneDrive\\Desktop\\coding_dojo\\C#\\ORM\\WeddingPlanner\\Views\\Shared\\Dashboard.cshtml",
-      "TargetPath": "Views\\Shared\\Dashboard.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\dawon\\OneDrive\\Desktop\\coding_dojo\\C#\\ORM\\WeddingPlanner\\Views\\Shared\\Details.cshtml",
-      "TargetPath": "Views\\Shared\\Details.cshtml",
+      "FilePath": "c:\\Users\\dawon\\OneDrive\\Desktop\\coding_dojo\\C#\\ORM\\WeddingPlanner\\Views\\Weddings\\New.cshtml",
+      "TargetPath": "Views\\Weddings\\New.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14424,11 +14419,6 @@
     {
       "FilePath": "c:\\Users\\dawon\\OneDrive\\Desktop\\coding_dojo\\C#\\ORM\\WeddingPlanner\\Views\\Home\\_Login.cshtml",
       "TargetPath": "Views\\Home\\_Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\dawon\\OneDrive\\Desktop\\coding_dojo\\C#\\ORM\\WeddingPlanner\\Views\\Shared\\_AllWeddings.cshtml",
-      "TargetPath": "Views\\Shared\\_AllWeddings.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14454,6 +14444,11 @@
     {
       "FilePath": "c:\\Users\\dawon\\OneDrive\\Desktop\\coding_dojo\\C#\\ORM\\WeddingPlanner\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\dawon\\OneDrive\\Desktop\\coding_dojo\\C#\\ORM\\WeddingPlanner\\Views\\Weddings\\Dashboard.cshtml",
+      "TargetPath": "Views\\Weddings\\Dashboard.cshtml",
       "FileKind": "mvc"
     },
     {

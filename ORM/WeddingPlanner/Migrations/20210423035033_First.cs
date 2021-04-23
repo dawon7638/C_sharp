@@ -52,7 +52,7 @@ namespace WeddingPlanner.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Guest",
+                name: "Guests",
                 columns: table => new
                 {
                     GuestId = table.Column<int>(nullable: false)
@@ -62,15 +62,15 @@ namespace WeddingPlanner.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Guest", x => x.GuestId);
+                    table.PrimaryKey("PK_Guests", x => x.GuestId);
                     table.ForeignKey(
-                        name: "FK_Guest_Users_UserId",
+                        name: "FK_Guests_Users_UserId",
                         column: x => x.UserId,
                         principalTable: "Users",
                         principalColumn: "UserId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Guest_Weddings_WeddingId",
+                        name: "FK_Guests_Weddings_WeddingId",
                         column: x => x.WeddingId,
                         principalTable: "Weddings",
                         principalColumn: "WeddingId",
@@ -78,13 +78,13 @@ namespace WeddingPlanner.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Guest_UserId",
-                table: "Guest",
+                name: "IX_Guests_UserId",
+                table: "Guests",
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Guest_WeddingId",
-                table: "Guest",
+                name: "IX_Guests_WeddingId",
+                table: "Guests",
                 column: "WeddingId");
 
             migrationBuilder.CreateIndex(
@@ -96,7 +96,7 @@ namespace WeddingPlanner.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Guest");
+                name: "Guests");
 
             migrationBuilder.DropTable(
                 name: "Weddings");

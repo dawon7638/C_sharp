@@ -1,11 +1,14 @@
 @model Wedding
-<div class="text-center row justify-content-around">
+@{
+    int? uid = @Context.Session.GetInt32("Userid");
+}
+<div class="text-center row justify-content-around align-items-center"> 
     <h1>Plan Your Wedding </h1>
     <a href="/Dashboard">Dashboard</a>
-    <a href="/">Log Out</a>
+    <a href="/">Log Out (@Context.Session.GetString("FullName"))</a>
 </div>
 
-<form asp-action="Create" asp-controller="Home" method="POST">
+<form asp-action="Create" asp-controller="Weddings" method="POST">
     <div class="form-group">
         <label asp-for="WedderName1"></label>
         <span asp-validation-for="WedderName1" class="text-danger"></span>

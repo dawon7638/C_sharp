@@ -5,39 +5,47 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WeddingPlanner.Models
 {
-    public class Wedding
+    public class User
     {
-        /////////////WEDDING ID\\\\\\\\\\\\\\\
-        public int WeddingId { get; set; }
+        /////////////USER ID\\\\\\\\\\\\\\\
+        public int UserId { get; set; }//KEY
         //////////////////////////////////
 
-        //////////WEDDERS NAMES\\\\\\\\\\\\
+        //////////USER'S NAME\\\\\\\\\\\\
         [Required(ErrorMessage = "is required.")]
         [MinLength(2, ErrorMessage = "at least 2 characters.")]
-        [Display(Name = "Wedder One:")]///WEDDER 1\\\
-        public string WedderName1 { get; set; }
+        [Display(Name = "First Name:")]///FIRST NAME\\\
+        public string FirstName { get; set; }
 
         [Required(ErrorMessage = "is required.")]
         [MinLength(2, ErrorMessage = "at least 2 characters.")]
-        [Display(Name = "Wedder Two:")]///WEDDER 2\\\
-        public string WedderName2 { get; set; }
+        [Display(Name = "Last Name:")]
+        public string LastName { get; set; }///LAST NAME\\\
         //////////////////////////////////
 
-        //////////WEDDING DATE\\\\\\\\\\\\
+        //////////USER'S EMAIL\\\\\\\\\\\\
         [Required(ErrorMessage = "is required.")]
-        [DataType(DataType.Date)]
-        [Display(Name = "Date:")]
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy/MM/dd}")] 
-        public DateTime Date { get; set; }
+        [EmailAddress]
+        [Display(Name = "Email:")]
+        public string Email { get; set; }
         //////////////////////////////////
 
-        //////////WEDDING ADDRESS\\\\\\\\\\\\
+        //////////USER'S PASSWORD\\\\\\\\\\\\
         [Required(ErrorMessage = "is required.")]
-        [Display(Name = "Wedding Address:")]
-        public string Address { get; set; }
+        [MinLength(8, ErrorMessage = "at least 8 characters.")]
+        [DataType(DataType.Password)]
+        [Display(Name = "Password:")]
+        public string Password { get; set; }
         //////////////////////////////////
 
-
+        //////////USER'S CONFIRM PASSWORD\\\\\\\\\\\\
+        [NotMapped]
+        [Required(ErrorMessage = "is required.")]
+        [Compare("Password", ErrorMessage = "please match password.")]
+        [DataType(DataType.Password)]
+        [Display(Name = "Confirm Password:")]
+        public string PasswordConfirm { get; set; }
+        //////////////////////////////////
 
         //////////CREATED AT DATE & TIME\\\\\\\\\\\\\\
         public DateTime CreatedAt { get; set; } = DateTime.Now;
@@ -54,21 +62,19 @@ namespace WeddingPlanner.Models
         will be the error if accessed but not included. 
         **********************************************************************/
 
-        /////////////FOREIGN KEYS\\\\\\\\\\\\\\\
-        public int UserId { get; set; }
-        //////////////////////////////////
-
-
-        //////////NAVIGATION PROPERTIES\\\\\\\\\\\\\
-        //One to many relationship
-        public User CreatedBy { get; set; }
+        //NAVIGATION PROPERTIES
         //Many to many relationship
         public List<Guest> RSVPs { get; set; }
+        //One to many relationship:User can create Many weddings. 
+        
+        public List<Wedding> CreatedWeddings { get; set; }
         //////////////////////////////////
 
-        public string CouplesName()//COMBINE FIRST AND SECOND NAME OF WEDDERS\\\\\\\\\\\\\
+        ////////////////METHODS\\\\\\\\\\\\\\\\\\
+        //COMBINE FIRST NAME AND LAST NAME OF USER
+        public string FullName()
         {
-            return WedderName1 + " & " + WedderName2;
+            return FirstName + " " + LastName;
         }
     }
 }
