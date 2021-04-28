@@ -57,13 +57,13 @@ namespace ActivityCtr.Controllers
 
         [HttpGet("/new")]
 
-        public IActionResult New()
+        public IActionResult New(Event newEvent)
         {
             if (!isLoggedIn)
             {
                 return RedirectToAction("Index", "Home");
             }
-            return View("New");
+            return View("New",newEvent);
         }
 
         [HttpGet("/activity/{EventId}")]
