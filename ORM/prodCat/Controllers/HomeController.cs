@@ -18,10 +18,29 @@ namespace prodCat.Controllers
         }
 
         [HttpGet("/products")]
-        public IActionResult Index()
+        public IActionResult ProductsIndex()
         {
-            return View("Products");
+            List<Product> allProduct = new List<Product>();
+            return View("Products", allProduct);
         }
+
+        [HttpGet("/categories")]
+        public IActionResult CategoriesIndex()
+        {
+            return View("Categories");
+        }
+
+        [HttpPost("/newProduct")]
+
+        public IActionResult CreateProduct(Product newProduct)
+        {
+            db.Products.Add(newProduct);
+            db.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+
+
 
 
 

@@ -58,3 +58,6 @@ C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\ORM\prodCat\obj\Debug\netcoreapp3
 C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\ORM\prodCat\obj\Debug\netcoreapp3.1\Razor\Views\Home\Products.cshtml.g.cs
 C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\ORM\prodCat\obj\Debug\netcoreapp3.1\Razor\Views\Home\_ProductForm.cshtml.g.cs
 C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\ORM\prodCat\obj\Debug\netcoreapp3.1\Razor\Views\Home\_ProductList.cshtml.g.cs
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\ORM\prodCat\obj\Debug\netcoreapp3.1\Razor\Views\Home\Categories.cshtml.g.cs
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\ORM\prodCat\obj\Debug\netcoreapp3.1\Razor\Views\Home\_CategoryForm.cshtml.g.cs
+C:\Users\dawon\OneDrive\Desktop\coding_dojo\C#\ORM\prodCat\obj\Debug\netcoreapp3.1\Razor\Views\Home\_CategoryList.cshtml.g.cs

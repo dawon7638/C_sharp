@@ -1,0 +1,18 @@
+<div class="text-center">
+    <a href="/products">
+        <h1>Products</h1>
+    </a> | <a href="/categories">
+        <h1>Categories</h1>
+    </a>
+</div>
+<div class="">
+    <h1>New Category</h1>
+    @{
+        Category newCategory = new Category();
+    }
+    <partial name="_CategoryForm" model="@newCategory" />
+</div>
+
+<div class="">
+    <partial name="_CategoryList"/>
+</div>

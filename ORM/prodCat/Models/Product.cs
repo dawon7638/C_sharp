@@ -19,9 +19,8 @@ namespace prodCat.Models
         public string ProductDescription { get; set; }
 
         [Required]
-        [Range(1, 999)]
+        [Range(1, 999999)]
         [Display(Name = "Price:")]
-
         public int ProductPrice { get; set; }
 
         /////////CREATED AT DATE & TIME\\\\\\\\\\\\\\

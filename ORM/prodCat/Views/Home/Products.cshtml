@@ -1,12 +1,27 @@
-﻿
-<div class="">
-<h1>New Product</h1>
-    @{
-        Product newProduct = new Product();
-    }
-    <partial name="_ProductForm" model="@newProduct"/>
+﻿@model List<Product>
+<div class="text-center row align-items-center">
+    <a href="/products">
+        <h1>Products</h1>
+    </a> | <a href="/categories">
+        <h1>Categories</h1>
+    </a>
 </div>
-
-<div class="">
-    <h1></h1>
+<div class="container">
+    <div class="row mt-5 justify-content-around">
+        <div class="col-xs-6">
+            <h1>New Product</h1>
+            @{
+                Product newProduct = new Product();
+            }
+            <partial name="_ProductForm" model="newProduct" />
+        </div>
+        <div class="col-xs-6">
+            @foreach (Product item in Model)
+            {
+                <a href="#">
+                    <p>@item.ProductName</p>
+                </a>
+            }
+        </div>
+    </div>
 </div>
