@@ -27,17 +27,27 @@ namespace prodCat.Controllers
         [HttpGet("/categories")]
         public IActionResult CategoriesIndex()
         {
-            return View("Categories");
+            List<Category> allCategories = new List<Category>();
+            return View("Categories", allCategories);
         }
 
         [HttpPost("/newProduct")]
-
         public IActionResult CreateProduct(Product newProduct)
         {
             db.Products.Add(newProduct);
             db.SaveChanges();
 
             return RedirectToAction("Index");
+        }
+
+        [HttpPost("/newCategory")]
+
+        public IActionResult CreateCategory(Category newCategory)
+        {
+            db.Categories.Add(newCategory);
+            db.SaveChanges();
+
+            return RedirectToAction("Categories");
         }
 
 
